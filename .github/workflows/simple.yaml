@@ -2,7 +2,7 @@ name: shell commands
 
 on:
   schedule:
-    - cron: "* * * * *" #at every min
+    - cron: "0/1 * * * *"
 
 jobs:
   run-shell-command:
