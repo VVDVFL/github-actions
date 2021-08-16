@@ -1,5 +1,7 @@
 name: Actions workflow
-  on: [push]
+
+   on: [push]
+
   jobs:
     run-github-actions:
       runas-on: ubuntu-latest
