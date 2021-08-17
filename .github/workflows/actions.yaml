@@ -2,8 +2,21 @@ name: Actions workflow
 
 on:
   push:
-  pull_request:
-    types: [closed, assigned, opened, reopenede]
+    branches:
+      - master
+      #- 'feature/*' - for any feature
+      #- 'feature/**' - for any feature branch
+      #- '!feature/1000' ! will not allow to trigger for that branch
+
+
+#  repository_dispatch:
+#    types: [build]
+#  schedule:
+#    - cron: "0/5 * * * *"
+#    - cron: "0/6 * * * *"
+#  push:
+#  pull_request:
+#    types: [closed, assigned, opened, reopenede]
 
 jobs:
   run-github-actions:
