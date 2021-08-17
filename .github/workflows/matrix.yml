@@ -8,7 +8,6 @@ jobs:
       matrix:
         os: [macos-latest, ubunut-latest, windows-latest]
         node_version: [6, 8, 10]
-        fails-fast: true
         max-parallel: 0
     runs-on: ${{ matrix.os }}
     steps:
