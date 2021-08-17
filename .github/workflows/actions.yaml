@@ -1,9 +1,10 @@
 name: Actions workflow
 
-on:
-  push:
-    branches:
-      - master
+on: pull_request
+#on:
+#  push:
+#    branches:
+#      - master
       #- 'feature/*' - for any feature
       #- 'feature/**' - for any feature branch
       #- '!feature/1000' ! will not allow to trigger for that branch
